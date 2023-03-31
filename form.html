@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color: red;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ödev-4</h1>
+        <form>
+            <table>
+                <tr><td>Ad:</td><td><input type="text" name="ad" maxlength="25"></td></tr>
+                <tr><td>Soyad:</td><td><input type="text" name="soyad" maxlength="25"></td></tr>
+                <tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+                <tr><td>Şifre:</td><td><input type="password" name="şifre"></td></tr>
+            </table>
+            <button type="submit">Submit</button>
+        </form> 
+        <form action="/mail.php" method="GET" target="_self">
+            <!-- Buraya bir şeyler gelecek -->
+        </form>
+        <form action="/submit-form.php" method="POST" target="_blank">
+            <!-- Buraya bir şeyler gelecek -->
+        </form>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+
+        <script>
+          const canvas = document.getElementById('myCanvas');
+          const context = canvas.getContext('2d');
+        
+          context.fillStyle = 'red';
+          context.fillRect(10, 10, 50, 50);
+        </script>
+        
+    </body>
+</html>
